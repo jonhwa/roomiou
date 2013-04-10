@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*@font-face{ 
+font-family: HelveticaNeueLTStd-ThCn;
+src: url("cssimg/HelveticaNeueLTStd-ThCn.otf");
+}*/
+@font-face{
+font-family: 'HelveticaNeueLTStdThinCnRg';
+src: url('cssimg/helveticaneueltstd-thcn-webfont.eot');
+src: url('cssimg/helveticaneueltstd-thcn-webfont.eot?#iefix') format('embedded-opentype'),
+	 url('cssimg/helveticaneueltstd-thcn-webfont.woff') format('woff'),
+	 url('cssimg/helveticaneueltstd-thcn-webfont.ttf') format('truetype'),
+	 url('cssimg/helveticaneueltstd-thcn-webfont.svg#HelveticaNeueLTStdThinCnRg') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'HelveticaNeueLTStd-MdCn';
+src: url('cssimg/HelveticaNeueLTStd-MdCn.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'BEBAS';
+src: url('cssimg/BEBAS.eot');
+src: url('cssimg/BEBAS.eot?#iefix') format('embedded-opentype'),
+	 url('cssimg/BEBAS.woff') format('woff'),
+	 url('cssimg/BEBAS.ttf') format('truetype'),
+	 url('cssimg/BEBAS.svg#BEBAS') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+html, body {
+	height: 100%;
+	font-family: Tahoma,Arial, sans-serif;
+}
+
+#header {
+	background-color: #2c2c2c;
+	height: 55px;
+}
+
+#headerContent {
+	float: right;
+	position: relative;	
+}
+
+h1, h2, h3, h4, h5, h6, a, label, input {
+	color: white;
+}
+
+h1 {
+	font-size: 30px;
+	text-shadow: 2px 2px 3px #333;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 20px;
+	text-align: center;
+	font-weight: 400;
+}
+
+h3.green {
+	color: #19AC19;	
+}
+ 
+p {
+	font-size: 13px;
+}
+
+p.white {
+	color: white;	
+}
+
+p.green {
+	color: #19AC19;	
+}
+
+p.small {
+	font-size: 11px;
+	color: #000000;
+}
+
+p.large {
+	font-size: 15px;
+	text-decoration: underline;
+	margin-bottom: 3px;	
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #e6d61b;
+}
+
+a:hover {
+	color: #898989;
+}
+
+a:active {
+	color: #898989;	
+}
+
+a.center {
+	text-align: center;	
+}
+
+span.green {
+	color: #19AC19;
+}
+
+span.roomSmall {
+	color: #E6D61B;
+	font-size: 12px;
+	cursor: pointer;
+	margin-left: 6px;
+}
+
+span.roomSmall:hover {
+	color: #898989;
+}
+
+.error{
+	margin-top: 0px;
+	color: red;
+	font-size: 13px;
+}
+
+/******************/
+/******FOOTER******/
+/******************/
+#footerWrapper {
+	height: 4em;
+}
+
+#footer p {
+	font-size: 14px;
+	text-align: right;
+	line-height: 14px;
+	padding: 10px;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+/******************/
+/****LOGIN BKGD****/
+/******************/
+html{
+	background-image: url('cssimg/loginbkgd.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+#bodyWrapper{
+	height: 100%;
+}
+
+#sidelogin{
+	height: 100%;
+}
+
+
+#sidelogincontent{
+	position: absolute;
+	top: 38%;
+	display: block;   
+	margin: 10px auto;
+	width: 270px;
+	line-height: 1.2;
+
+}
+
+
+
+#sideloginregister{
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	color: #FFFFFF;
+	margin-top: 30px;
+}
+
+#signup{
+	color: #E6D61B;
+	display: inline;
+}
+
+#signup:hover{
+	color: #898989;
+}
+
+#form{
+	margin: 30px 10px;
+}
+
+#registration{
+	position: absolute;
+	top: 25%;
+}
+
+#login{
+	display: inline;
+	position: relative;
+	top: 30%;
+}
+
+#resetpw{
+	position: absolute;
+	top: 40%;
+}
+
+#registrationtitle{
+	font-size: 30px;
+}
+
+#logintitle, #registrationtitle{
+	position:absolute;
+	font-family: 'BEBAS', Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	margin-left: 5px;
+}
+
+#logincontent{
+	position: absolute;
+	margin-top: 37px;
+	background-color: rgba(0,0,0,0.4);
+	border: 3px solid rgba(255,255,255, 0.5);
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+	padding-bottom: 10px;
+}
+/**************/
+/*****edit*****/
+/**************/
+#edittitle{
+	font-size: 25px;
+	color: #000000;
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+	margin-bottom: 10px;
+}
+
+/**************/
+/****invite****/
+/**************/
+#inviteResult{
+	display: block;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+}
+

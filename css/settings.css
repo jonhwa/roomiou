@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+#body{
+	width: 100%;
+}
+
+#settingstitle{
+	font-size: 30px;
+	color: #000000;
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+}
+button.submitted, button#submitted{
+	margin-top: 15px;
+	display: block;
+	height: 30px;
+	width: 200px;
+	padding-left: 0;
+	padding-right: 0;
+	background-color: #e6d61b;	
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+}
+
+button.submitted:hover, button#submitted:hover{
+	background-color: #e6d61b;
+}	
+
+button.submitted:active, button#submitted:active {
+	background-color: #e6d61b;
+}
+button.submit, button#submit {
+	margin-top: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	display: block;
+	height: 30px;
+	width: 200px;
+	background-color: #2c2c2c;	
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+}
+
+button.removesubmit{
+	margin-top: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	display: block;
+	height: 25px;
+	width: 50px;
+	background-color: #2c2c2c;	
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 18px;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+}
+button.submit:hover, button#submit:hover, button.removesubmit:hover {
+	background-color: #e6d61b;
+}	
+
+button.submit:active, button#submit:active, button.removesubmit:active{
+	background-color: #e6d61b;
+}
+
+
+
+#settingbuttons{
+	width:200px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+form{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 150px;
+	width: auto;
+}
+
+input{
+	width: 175px;
+	height: 20px;
+	padding-left: 5px;
+}
+
+button#smallerbutton{
+	margin-top: 15px;
+	display: block;
+	height: 25px;
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #2c2c2c;	
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 18px;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+}
+
+button#smallerbutton:hover {
+	background-color: #e6d61b;
+}	
+
+button#smallerbutton:active {
+	background-color: #e6d61b;
+}
+
+#removeroommates{
+	display: inline;
+}
+#timetext{
+	text-size:12px;
+}
+
+#rightside {
+	width: 250px;
+	margin-left: 150px;
+	display: inline-block;
+}
+
+#rightside form {
+	margin-left: 0;
+}
+
+#removebutton{
+	cursor: pointer;
+	color: #898989;
+	font-size: 11px;
+}
+
+#removebutton:hover{
+	color: #e6d61b;
+}
+
+#time{
+	font-size:14px;
+	vertical-align: 35%;
+
+}
+
+input[type="radio"]{
+	width:auto;
+	border: 1px solid rgba(0,0,0,0);
+}
+
+h4{
+	font-size: 14px;
+	display: block;
+	margin-bottom: 10px;
+}

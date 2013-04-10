@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+#body{
+	width: 100%;
+	padding-top: 15px;
+	}
+
+a.small {
+	color: #03F;
+	font-size: 12px;	
+	margin-top: 5px;
+}
+
+a.small:hover {
+	color: #e6d61b;		
+}
+
+form {
+	margin: 0;	
+	width: 350px;
+	font-family: Tahoma,Arial, sans-serif;
+}
+
+#leftLabel{
+	padding-bottom: 1px;
+	display: block;
+}
+
+span#formLeft {
+	display: block;
+	width: 150px;
+	padding-right: 50px;
+	float: left;
+	margin-bottom: 17px;
+}
+
+select#purchaser, input#item{
+	margin-bottom: 6px;
+}
+
+input#total{
+	margin-bottom: 11px;
+}
+
+span#formRight {
+	display: block;
+	width: 150px;
+	float: right;
+	margin-top: 0;
+}
+
+button.submit, button#submit{
+	margin-top: 15px;
+	display: block;
+	height: 30px;
+	width: 150px;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-color: #2c2c2c;	
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+}
+button.submitted, button#submitted{
+	margin-top: 15px;
+	display: block;
+	height: 30px;
+	width: 150px;
+	padding-left: 0px;
+	padding-right: 0px;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffffff;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	font-family: 'HelveticaNeueLTStdThinCnRg', Helvetica, Arial, sans-serif;
+	background-color: #e6d61b;
+}
+
+button.submit:hover, button#submit:hover {
+	background-color: #e6d61b;
+	
+}	
+
+button.submit:active {
+	background-color: #e6d61b;
+}
+
+#settingbuttons{
+	width:200px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#paymentform{
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	margin-left: 120px;
+}
+
+#reviewSpan {
+	margin-top: 5px;
+	display: block;
+	clear: both;
+}
+
+#explanation {
+	display: block;
+	font-size: 12px;
+	width: 350px;
+}
+
+#explanationClick {
+	display: block;
+	font-size: 12px;
+	cursor: pointer;
+	color: blue;
+	margin-top: 10px;
+}

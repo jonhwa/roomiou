@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+#headerContent {
+	margin-top: 20px;
+}
+
+#body {
+	background-color: #303030;
+	padding: 50px 20px;
+	margin-top: 40px;	
+}
+
+a {
+	margin-top: 15px;
+	display: inline;
+}
+
+.forgot{
+	font-size: 12px;
+	color: #FFFFFF;
+	margin-left: 133px;
+	margin-top: 4px;
+	display: inline-block;
+}
+
+form {
+	float: right;
+}
+
+label {
+	display: inline-block;
+	font-size: 16px;
+	padding-bottom: 5px;
+}
+
+input {
+	width: 250px;
+	height: 20px;
+	margin-right: 5px;
+	padding: 2px;
+	color: #333;	
+	font-size: 15px;
+}
+
+button.submit, button#submit {
+	width: auto;
+	height: 35px;
+	margin-left: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: #e6d61b;	
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 20px;
+	color: #000000;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0.3);
+	font-family: 'BEBAS', Helvetica, Arial, sans-serif;
+}
+
+button.submit:hover, button#submit:hover {
+	background-color: #898989;
+}	
+
+#body form {
+	float: left;	
+}
+
+#body label {
+	display: block;
+	margin-top: 10px;	
+	margin-left: 0;
+}
+
+#body input.submit {
+	display: block;
+	width: 100px;	
+}
+
+#loggedin{
+	font-size: 13px;
+	color: #FFFFFF;
+	vertical-align: 30%;
+}
+
+input#remember{
+	width: auto;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#form{
+	margin-bottom: 0px;
+}
+
+#form.email{
+	margin-bottom:20px;
+}

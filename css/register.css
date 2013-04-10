@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#signup{
+	color: #E6D61B;
+	display: inline;
+}
+
+input {
+	width: 240px;
+	height: 20px;
+	margin-right: 10px;
+	padding: 2px;
+	color: #333;	
+	font-size: 15px;
+}
+
+#registrationform {
+	width: 250px;
+	margin: 10px 10px 10px 10px;	
+}
+
+label {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 0;
+	padding-bottom: 5px;
+	font-size: 16px;
+}
+
+#registrationcontent{
+	position: absolute;
+	margin-top: 37px;
+	background-color: rgba(0,0,0,0.4);
+	border: 3px solid rgba(255,255,255, 0.5);
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+button.submit, button#submit {
+	display: block;
+	height: 35px;
+	width: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 15px;
+	background-color: #e6d61b;	
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 20px;
+	color: #000000;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border: 1px solid rgba(0,0,0,0.3);
+	font-family: 'BEBAS', Helvetica, Arial, sans-serif;
+}
+
+button.submit:hover, button#submit:hover {
+	background-color: #898989;
+}
+
+#dropdown {
+	background-color: white;
+}
+
+#dropdown p {
+	padding: 2px;
+	cursor: pointer;
+}
+
+#dropdown p:hover {
+	background-color: #E6D61B;
+}
