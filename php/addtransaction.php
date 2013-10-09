@@ -14,11 +14,11 @@ if ($type == 'bill') {
 	$purchaser = $_GET['purchaser'];
 	$item = ucfirst($_GET['item']);
 	$total = $_GET['total'];
+	$split = array();
 	
 	if ($item == '') $errors['item'] = 'The item must have a name';
 	if ($total == '') $errors['total'] = 'You must provide the total';
 	if (count($errors) == 0) {
-		$split = "";
 		for ($i = 0; $i < count($roommates); $i++) {
 			$userid = $roommates[$i];
 			$amount = $_GET[$i]; //This is the expense to be allocated to this user
@@ -29,15 +29,14 @@ if ($type == 'bill') {
 				$newBalance = $balance - $amount;
 			}
 	
-			$split .= $userid.','.$amount;
-			if ($i + 1 < count($roommates)) {
-				$split .= ',';
-			}
+			$split[$userid] = $amount;
 				
 			$query = "UPDATE users SET balance='$newBalance' WHERE id='$userid'";
 			mysql_query($query) or die(mysql_error());
 		}
-		$query = "INSERT INTO transactions (roomid, type, item, total, date, purchaser, split) VALUES ('$room', '$type', '$item', '$total', '$date', '$purchaser', '$split')";
+		
+		$stringSplit = serialize($split);
+		$query = "INSERT INTO transactions (roomid, type, item, total, date, purchaser, split) VALUES ('$room', '$type', '$item', '$total', '$date', '$purchaser', '$stringSplit')";
 		mysql_query($query) or die(mysql_error());
 	
 		header("Location: ../summary.php");
