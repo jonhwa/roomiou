@@ -13,12 +13,13 @@ $row = mysql_fetch_assoc($result);
 
 $roommates = getRoommates($roomid);
 if ($type == 'bill') {
-	$currentSplit = $row['split'];
+	$currentSplit = unserialize($row['split']);
 	$origPurchaser = $row['purchaser'];
 	$origTotal = $row['total'];
 	$purchaser = $_POST['purchaser'];
 	$item = $_POST['item'];
 	$total = $_POST['total'];
+	$newSplit = array();
 	
 	for ($i = 0; $i < count($roommates); $i++) {
 		$userid = $roommates[$i];
@@ -40,17 +41,15 @@ if ($type == 'bill') {
 			
 		$difference += $currentAmount - $amount;
 		$newBalance = $balance + $difference;
-				
-		$split .= $userid.','.$amount;
-		if ($i + 1 < count($roommates)) {
-			$split .= ',';
-		}
+		
+		$newSplit[$userid] = $amount;
 						
 		$query = "UPDATE users SET balance='$newBalance' WHERE id='$userid'";
 		mysql_query($query) or die(mysql_error());
 	}
-	
-	$query = "UPDATE transactions SET item='$item', total='$total', purchaser='$purchaser', split='$split' WHERE id='$id'"; 
+
+	$stringSplit = serialize($newSplit);
+	$query = "UPDATE transactions SET item='$item', total='$total', purchaser='$purchaser', split='$stringSplit' WHERE id='$id'"; 
 	mysql_query($query) or die(mysql_error());
 } else if ($type == 'payment') {
 	$origPayer = $row['payer'];

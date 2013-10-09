@@ -70,21 +70,12 @@ function getPurchaser($transactionid) {
 
 //Get and parse transaction split by transaction ID
 function getSplit($transactionid) {
-	$splitarr = array();
-	
 	$query = "SELECT split FROM transactions WHERE id='$transactionid'";
 	$result = mysql_query($query) or die(mysql_error());
 	$row = mysql_fetch_assoc($result);
 	$string = $row['split'];
-	$arr = explode(",", $string);
-	
-	for ($i=1; $i<count($arr); $i+=2) {
-		$key = $arr[$i-1];
-		$value = $arr[$i];
-		$splitarr[$key] = $value;
-	}
-	
-	return $splitarr;
+	$split = unserialize($string);
+	return $split;
 }
 
 function sumBalance($roomid) {
